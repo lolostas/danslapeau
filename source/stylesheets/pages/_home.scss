@@ -19,6 +19,10 @@ label{
   text-decoration: none!important;
 }
 
+
+.banner-content{
+  padding: 10px;
+}
 .header {
   background-color: $light-gray;
   width: 200px;
@@ -39,16 +43,16 @@ label{
 }
 
 .content {
-  background-color: $blue-aca;
   margin-left: 200px;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 
 @media(max-width: 700px) {
 .content {
-    background-color: $blue-aca;
     margin-left: 0px;
+    min-height: 100vh;
+
 
   }
 }
@@ -112,9 +116,9 @@ label{
 
 // header
 .content-header {
-  padding-left: 10px;
+  padding-left: 20px;
   height: 100%;
-  padding-right: 10px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -158,7 +162,7 @@ label{
   border-bottom: 1px solid $light-gray;
   color: white;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-color: $red;
@@ -168,13 +172,13 @@ label{
 }
 
 .banner h1 {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
 
 .banner p {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: lighter;
   color: rgb(255, 255, 255);
   opacity: 0.6;
@@ -183,9 +187,50 @@ label{
 
 @media(max-width: 700px){
 .banner {
-  display: none;
+  // display: none;
   }
 }
+
+
+.banner-2 {
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  text-align: center;
+  min-height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.banner-2 h2 {
+  font-size: 28px;
+  color: $red;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.banner-2 p {
+  color: $red;
+  font-size: 14px;
+  font-weight: lighter;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+@media(max-width: 700px){
+.banner-2 {
+  // display: none;
+  }
+}
+
+
+
+
+
+
 
 @media(max-width: 680px){
 .banner-top {
