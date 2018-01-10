@@ -1,0 +1,315 @@
+@media(min-width: 700px) {
+  .menu-service {
+  display: block;
+  margin: auto;
+  font-size: 20px !important;
+      padding-top: 2.5vh;
+      text-align: center;
+}
+}
+
+.menu-service {
+  padding-top: 2.5vh;
+  display: block;
+  margin: auto;
+  font-size: 14px;
+  text-align: center;
+  width: 99%;
+  height: 98%;
+  margin-top: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  a{
+    color: $red;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 2px;
+    padding-left: 5px;
+    margin: 2px;
+    line-height: 1.65;
+
+  }
+
+  a:hover{
+    width: 100%;
+    border-color: $red;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 5px;
+    border-style: solid;
+    padding-right: 2px;
+    padding-left: 5px;
+    transition: all 500ms ease;
+
+    text-decoration: none;
+}
+
+  a.active{
+    color: $red;
+    text-decoration: none;
+    border-color: $red !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border-top: 0px !important;
+    border-bottom: 5px !important;
+    border-style: solid !important;
+}
+}
+
+.content-service{
+  // height: 90vh;
+}
+
+.banner-service {
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  color: $red;
+  text-align: center;
+  // min-height: 90vh;
+  background: $light-gray;  /* fallback for old browsers */
+ //  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+ //  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ //  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+}
+
+.frame {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #f4f4f4;
+  // width:99%;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  min-height: 100vh;
+  overflow: scroll;
+  // position:block;
+  // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+@media (max-width:850px) {
+  .frame{
+  display: block;
+}
+
+}
+
+.tab-content{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+// dropdown
+
+article * {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+article section:first-of-type {}
+
+article section:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+article label {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.exp-details {
+  display: none;
+}
+
+.exp-details:checked + div {
+  display: block !important;
+
+}
+
+.plus{
+  color: $red;
+}
+.plus:hover {
+  color: $light-blue-aca;
+}
+
+.card {
+  border-radius: 5px;
+  min-height: 70px;
+  min-width: 310px;
+  margin: 5px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+// .card :hover{
+//   border-left: solid 10px;
+// }
+
+}
+
+.card:hover{
+  border-left: solid 10px $red;
+  transition: all 500ms ease;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+}
+
+
+.card-description a {
+  font-size: 24px;
+}
+.card-description a:hover {
+  text-decoration:none;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.3;
+}
+
+.blocka{
+  margin-top: 30px;
+
+  a{
+    color: $red;
+    opacity:1;
+
+  }
+    a:hover{
+
+    opacity:0.6;
+    text-decoration:none;
+  }
+
+}
+
+.blockb{
+  text-align: left;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  width: 55vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+@media(max-width: 850px) {
+  .blockb {
+width:95%;
+margin: auto;
+}
+ .blocka {
+margin: auto;
+text-align: center;
+font-size: 16px;
+}
+}
+
+.blockcity{
+  text-align: left;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  width: 30vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  opacity: 0.8;
+  color: black !important;
+  margin: auto;
+  text-align: center;
+  p{
+    color: black;
+    opacity: 1;
+  }
+}
+.active{
+  text-decoration: none;
+}
+
+.active:visited {
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+.active:focus {
+  text-decoration: none;
+}
+
+.usp{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center;
+}
+
+.img-menu{
+  height: 50px;
+  padding: 1px;
+  background-color: $red;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.img-main{
+  height: 100px;
+  padding: 1px;
+  background-color: $red;
+  border-radius: 50px;
+}
+
+.img-usp{
+height:50px;
+padding:1px;
+background-color: $red;
+border-radius: 25px;
+}
+
+.more{
+  color: $red;
+
+}
+.more:hover{
+  color: $red;
+  opacity: 0.5;
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+<section id="service">
+  <div class="banner-service">
+    <div class="frame">
+      <div class="blocka">
+
+
+
+<p>            <a class="tab active" data-target="#comptabilite" href="#comptabilite"><%= image_tag 'bill.png',class: "img-menu" %>Expertise Comptable</a></p>
+<p><a class="tab" data-target="#finance" href="#finance" ><%= image_tag 'graph.png',class: "img-menu" %>Conseils Financiers</a></p>
+<p><a class="tab" data-target="#gestion" href="#gestion"><%= image_tag 'businessman.png',class: "img-menu" %>Conseils en Management </a></p>
+<p><a class="tab" data-target="#juridique" href="#juridique"><%= image_tag 'auction.png',class: "img-menu"  %>Conseils Juridique </a></p>
+<p><a class="tab" data-target="#rh" href="#rh"><%= image_tag 'network.png',class: "img-menu" %>Ressources Humaines </a></p>
+<p><a class="tab" data-target="#social" href="#social"><%= image_tag 'archive.png', class: "img-menu" %>Conseils social</a></p>
+<p><a class="tab" data-target="#fo" href="#fo"><%= image_tag 'record.png', class: "img-menu" %>Family Office </a></p>
+<p><a class="tab" data-target="#marketing" href="#marketing"><%= image_tag 'megaphone.png', class: "img-menu" %>Marketing </a></p>
+
+
+
+
+      </div>
+      <div class="blockb">
+        <%= partial "comptafr" %>
+        <%= partial "juridiquefr" %>
+        <%= partial "financefr" %>
+        <%= partial "socialfr" %>
+        <%= partial "gestionfr" %>
+        <%= partial "rhfr" %>
+        <%= partial "fofr" %>
+        <%= partial "marketingfr" %>
+      </div>
+    </div>
+  </div>
+</section>
